@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;950&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-primary: #0f172a; /* Deep slate-900 */
+  --color-brand-secondary: #dc2626; /* Energetic Crimson Red */
+  --color-brand-accent: #991b1b; /* Dark blood red */
+  --color-brand-light: #f8fafc; /* Sleek high-density slate-50 background */
+  --color-brand-card: #ffffff; /* Pure white crisp cards */
+}
+
+/* Custom smooth transitions and animations */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Apply High-Density styling adjustments */
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+  }
+}
+
